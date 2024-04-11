@@ -1,38 +1,41 @@
-.App {
+.lightapp {
   text-align: center;
+  background-color: #7d838d;
+  transition: background-color 1s
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.lightapp-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(40, 39, 39);
+  transition: color 1s
 }
 
-.App-link {
-  color: #61dafb;
+.lightapp-link {
+  color: rgb(40, 39, 39);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.darkapp {
+  text-align: center;
+  background-color: #273e6e;
+  transition: background-color 1s
+}
+
+.darkapp-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(178, 176, 176);
+  transition: color 1s
+}
+
+.darkapp-link {
+  color: #688a94;
 }
