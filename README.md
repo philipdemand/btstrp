@@ -23,6 +23,6 @@ GitHub Repo: [Link to GitHub repository]</li>
 <h3>You can find my detailed resume here.</h3>
 
 <h2>Contact Me</h2>
-<h3>Feel free to reach out to me at [your_email@example.com]. I'm open to new opportunities, collaboration, and feedback on my projects.</h3>
+<h3>Feel free to reach out to me at <a href="philipdemand@gmail.com">philipdemand@gmail.com</a>. I'm open to new opportunities, collaboration, and feedback on my projects.</h3>
 
 T<h1>hank you for visiting my website!</h1>
