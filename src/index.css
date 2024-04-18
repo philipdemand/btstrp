@@ -7,7 +7,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: var(--background-color);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.cardstyle {
+  background-color: #a9b1c3;
+}
+
+.right-fixed-component {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.pad-top {
+  padding-top: 10px;
+}
+
+.icon:hover {
+  color: rgb(255, 255, 255);
+}
+
+.right-fixed-component:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* .right-fixed-component:not(.clicked):active {
+  color: rgb(0, 255, 183);
+} */
