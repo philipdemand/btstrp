@@ -40,7 +40,7 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
         <Col>
             <h1>Hi, I'm Phil</h1>
             <h3>Full Stack Software Engineer</h3><br/>
-            <h5>Welcome to my personal website, your gateway to exploring my résumé, portfolio, and journey as a software engineer, designed to showcase my skills and passion for creating impactful tech solutions!</h5>
+            <h5 style={{paddingBottom: "20px"}}>Welcome to my personal website, your gateway to exploring my résumé, portfolio, and journey as a software engineer, designed to showcase my skills and passion for creating impactful tech solutions!</h5>
             <Button 
               size="sm" 
               style={!hovered ? buttonStyle : hoveredStyle} 

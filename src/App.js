@@ -6,6 +6,7 @@ import Contact from './Contact';
 import ScrollButton from './ScrollButton';
 import { PROJECTS } from './misc/Projects.js'
 import Portfolio from './Portfolio.js';
+import Footer from './Footer.js';
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
       <About scrollToContact={scrollToContact} lightClicked={lightClicked} aboutRef={aboutRef}/>
       <Portfolio projects={PROJECTS} lightClicked={lightClicked} portfolioRef={portfolioRef}/>
       <Contact lightClicked={lightClicked} contactRef={contactRef}/>
+      <Footer lightClicked={lightClicked}/>
       <ScrollButton scrollTop={scrollTop}/>
       </header>
     </div>

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Card from 'react-bootstrap/Card';
+// import Card from 'react-bootstrap/Card';
 
 const Contact = ({ contactRef, lightClicked }) => {
 
@@ -17,10 +17,17 @@ const Contact = ({ contactRef, lightClicked }) => {
     };
 
     const [formData, setFormData] = useState(initialFormData)
+    const [hovered, setHovered] = useState(false)
 
     const buttonStyle = {
         backgroundColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
         borderColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
+        color: !lightClicked ? '#7d838d' : "#273e6e"
+      };
+
+      const hoveredStyle = {
+        backgroundColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
+        borderColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
         color: !lightClicked ? '#7d838d' : "#273e6e"
       };
 
@@ -54,10 +61,11 @@ const Contact = ({ contactRef, lightClicked }) => {
 
     return (
         <div>
-            <Container style={{ paddingTop: "100px", paddingBottom: "50px", width: "75%" }} >
-                <Card style={{ fontFamily: 'Menlo, monospace' }}>
+            <Container style={{ paddingTop: "100px", paddingBottom: "60px", width: "50%" }} >
+                <h2 style={{ fontFamily: 'Menlo, monospace' }}>Let's Get In Touch!</h2>
+                {/* <Card style={{ fontFamily: 'Menlo, monospace' }}>
                     <Card.Body style={buttonStyle}>
-                    <Card.Title>Let's Get In Touch!</Card.Title><br/>
+                    <Card.Title>Let's Get In Touch!</Card.Title><br/> */}
                         <Form ref={contactRef} onSubmit={submitContactForm} style={{ fontFamily: 'Menlo, monospace' }}>
                             <Form.Group className="mb-3" controlId="name">
                                 <Form.Label style={{ fontSize: "18px" }}>Name:</Form.Label>
@@ -78,13 +86,19 @@ const Contact = ({ contactRef, lightClicked }) => {
                                 <Form.Label style={{ fontSize: "18px" }}>Message:</Form.Label>
                                 <Form.Control as="textarea" rows={5} style={{ resize: "vertical" }} name="message" onChange={handleChange} value={formData.message} type="text" placeholder="Send me a message!" />
                             </Form.Group>
-                            <Button style={buttonStyle} type="submit">
+                            <Button 
+                                style={!hovered ? buttonStyle : hoveredStyle} 
+                                type="submit" 
+                                size="sm"
+                                onMouseEnter={() => setHovered(true)}
+                                onMouseLeave={() => setHovered(false)}
+                            >
                                 Submit
                             </Button>
                         </Form>
                         <ToastContainer position="top-right" autoClose={3000} hideProgressBar newestOnTop closeOnClick rtl pauseOnFocusLoss draggable pauseOnHover />
-                    </Card.Body>
-                </Card>
+                    {/* </Card.Body>
+                </Card> */}
             </Container>
         </div>
     );

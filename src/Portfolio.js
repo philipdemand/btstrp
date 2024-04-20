@@ -10,7 +10,7 @@ const Portfolio = ({ projects, lightClicked, portfolioRef }) => {
             <Container>
                 <Row className="g-4 justify-content-center">
                     {projects.map((project, idx) => {
-                        return <Col key={idx} xs={5}><ProjectCard project={project} lightClicked={lightClicked}/></Col>;
+                        return <Col key={idx} xs={12} sm={6} lg={6}><ProjectCard project={project} lightClicked={lightClicked}/></Col>;
                     })}
                 </Row>
             </Container>

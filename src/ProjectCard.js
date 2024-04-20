@@ -40,7 +40,7 @@ const ProjectCard = ({ project, lightClicked }) => {
     }
 
     return (
-        <Card className="bg-transparent">
+        <Card className="bg-transparent" style={{maxWidth: "550px"}}>
             <Card.Body style={cardItemsStyle}>
                 <Card.Title style={{ fontSize: '1.3rem' }}>{project.title}</Card.Title>
                 <Card.Text style={{ fontSize: '.89rem' }}>
