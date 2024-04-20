@@ -25,8 +25,8 @@ export const PROJECTS = [
     },
     {
       title: "Personal Website",
-      description: "My portfolio website! Built using React and CSS3. Serverless function setup to accept HTTP requests from the contact form and send an email using EmailJS. The website is fully responsive using React Bootstrap.",
-      technologies: ["reactbootstrap", "chrome", "css3", "devicon", "git", "github", "html5", "javascript", "nodejs", "npm", "react", "homebrew", "vscode"],
+      description: "My portfolio website! Built using React and CSS3. Serverless function setup to accept HTTP requests from the contact form and send an email using EmailJS. The website is fully responsive using React Bootstrap. Deployed using AWS",
+      technologies: ["reactbootstrap", "chrome", "css3", "devicon", "git", "github", "html5", "javascript", "nodejs", "npm", "react", "homebrew", "vscode", "amazonwebservices"],
       page: null,
       github: "https://github.com/philipdemand/my-personal-website",
       image: {

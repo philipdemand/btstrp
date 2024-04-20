@@ -1,4 +1,5 @@
 const ICONS = {
+  "amazonwebservices": "devicon-amazonwebservices-plain-wordmark",
   "bootstrap": "devicon-bootstrap-plain",
   "chrome": "devicon-chrome-plain",
   "devicon": "devicon-devicon-plain",
