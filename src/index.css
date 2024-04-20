@@ -42,6 +42,7 @@ code {
   color: rgb(255, 255, 255);
 }
 
-/* .right-fixed-component:not(.clicked):active {
-  color: rgb(0, 255, 183);
-} */
+.portfoliodiv {
+  font-family: Menlo, monospace;
+  padding-top: 30px;
+}

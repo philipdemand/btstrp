@@ -6,12 +6,13 @@ import resume from './downloadables/P_Demand_Resume_4_11_24.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
-const NavBar = ({ lightClicked, toggleLightMode, scrollToAbout, scrollToContact }) => {
+const NavBar = ({ lightClicked, toggleLightMode, scrollToAbout, scrollToContact, scrollToPortfolio }) => {
 
     const [moonSunHovered, setMoonSunHovered] = useState(false)
     const [linkOneHovered, setLinkOneHovered] = useState(false)
     const [linkTwoHovered, setLinkTwoHovered] = useState(false)
     const [linkThreeHovered, setLinkThreeHovered] = useState(false)
+    const [linkFourHovered, setLinkFourHovered] = useState(false)
     const [brandHovered, setBrandHovered] = useState(false)
 
     const navItemsStyle = {
@@ -46,6 +47,14 @@ const NavBar = ({ lightClicked, toggleLightMode, scrollToAbout, scrollToContact 
                                 onMouseLeave={() => setLinkOneHovered(false)}
                             >
                                  About
+                            </Nav.Link>
+                            <Nav.Link 
+                                style={!linkFourHovered ? navItemsStyle : hoveredNavItemsStyle}
+                                onClick={scrollToPortfolio}
+                                onMouseEnter={() => setLinkFourHovered(true)}
+                                onMouseLeave={() => setLinkFourHovered(false)}
+                            >
+                                 Portfolio
                             </Nav.Link>
                             <Nav.Link 
                                 style={!linkTwoHovered ? navItemsStyle : hoveredNavItemsStyle}

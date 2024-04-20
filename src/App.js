@@ -4,12 +4,15 @@ import NavBar from './NavBar';
 import About from './About';
 import Contact from './Contact';
 import ScrollButton from './ScrollButton';
+import { PROJECTS } from './misc/Projects.js'
+import Portfolio from './Portfolio.js';
 
 function App() {
 
   const [lightClicked, setLightClicked] = useState(false)
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
+  const portfolioRef = useRef(null)
 
   useEffect(() => {
     document.documentElement.style.setProperty(
@@ -26,6 +29,10 @@ function App() {
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToPortfolio = () => {
+    portfolioRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   function scrollTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -37,9 +44,10 @@ function App() {
 
   return (
     <div className={lightClicked ? "darkapp" : "lightapp"}>
-      <NavBar lightClicked={lightClicked} toggleLightMode={toggleLightMode} scrollToAbout={scrollToAbout} scrollToContact={scrollToContact}/>
+      <NavBar lightClicked={lightClicked} toggleLightMode={toggleLightMode} scrollToAbout={scrollToAbout} scrollToContact={scrollToContact} scrollToPortfolio={scrollToPortfolio}/>
       <header className={lightClicked ? "darkapp-header" : "lightapp-header"}>
       <About scrollToContact={scrollToContact} lightClicked={lightClicked} aboutRef={aboutRef}/>
+      <Portfolio projects={PROJECTS} lightClicked={lightClicked} portfolioRef={portfolioRef}/>
       <Contact lightClicked={lightClicked} contactRef={contactRef}/>
       <ScrollButton scrollTop={scrollTop}/>
       </header>
