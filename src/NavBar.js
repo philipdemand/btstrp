@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import resume from './downloadables/P_Demand_Resume_4_20_24a.pdf'
+import resume from './downloadables/P_Demand_Resume_4_20_24b.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
@@ -60,7 +60,7 @@ const NavBar = ({ lightClicked, toggleLightMode, scrollToAbout, scrollToContact,
                                 style={!linkTwoHovered ? navItemsStyle : hoveredNavItemsStyle}
                                 onMouseEnter={() => setLinkTwoHovered(true)}
                                 onMouseLeave={() => setLinkTwoHovered(false)}
-                                href={resume} download="P_Demand_Resume_4_20_24a.pdf"
+                                href={resume} download="P_Demand_Resume_4_20_24b.pdf"
                             >
                                 Résumé
                             </Nav.Link>

@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import resume from './downloadables/P_Demand_Resume_4_20_24a.pdf'
+import resume from './downloadables/P_Demand_Resume_4_20_24b.pdf'
 
 function About ({ aboutRef, lightClicked, scrollToContact }) {
 
@@ -51,7 +51,7 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
                 Contact Me!
             </Button>
             <div className="pad-top">
-              <a href={resume} style={{color: "inherit"}}download="P_Demand_Resume_4_20_24a.pdf"><FontAwesomeIcon icon={faFileLines} size="xl" className="icon"/></a>
+              <a href={resume} style={{color: "inherit"}}download="P_Demand_Resume_4_20_24b.pdf"><FontAwesomeIcon icon={faFileLines} size="xl" className="icon"/></a>
               <FontAwesomeIcon onClick={handleNavLi} icon={faLinkedin} size="xl" className="icon"/> 
               <FontAwesomeIcon onClick={handleNavGh} icon={faGithub} size="xl" className="icon"/>
             </div>
