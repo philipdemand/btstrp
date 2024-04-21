@@ -17,7 +17,7 @@ Description: An app where users can announce events, and where users can registe
 Tech Stack: javascript, npm, ruby, rails, react, reactrouter, chrome, css3, git, nodejs, github, html5, mysql, homebrew, vscode
 GitHub Repo: <a href="https://github.com/philipdemand/e-vent-app">E-Vent Repo</a></li>
 <li>Project : My Personal Website
-Description: My portfolio website! Built using React and CSS3. Serverless function setup to accept HTTP requests from the contact form and send an email using EmailJS. The website is fully responsive using React Bootstrap.  Deployed using AWS
+Description: My portfolio website! Built using React and CSS3. Serverless function setup to accept HTTP requests from the contact form and send an email using EmailJS. The website is fully responsive using React Bootstrap.  Deployed using AWS.
 Tech Stack: reactbootstrap, chrome, css3, devicon, git, github, html5, javascript, nodejs, npm, react, homebrew, vscode, amazonwebservices
 Demo: <a href="https://www.philipdemand.com">My Personal Website</a>
 GitHub Repo: <a href="https://github.com/philipdemand/my-personal-website">My Personal Website Repo</a></li>
@@ -27,6 +27,6 @@ GitHub Repo: <a href="https://github.com/philipdemand/my-personal-website">My Pe
 <h3><a href="https://www.philipdemand.com/static/media/P_Demand_Resume_4_11_24.2e425103ca186ba1f6c0.pdf">You can find my detailed resume here.</a></h3>
 
 <h2>Contact Me</h2>
-<h3>Feel free to reach out to me at philipdemand@gmail.com. I'm open to new opportunities, collaboration, and feedback on my projects.</h3>
+<h3>Feel free to reach out to me at <a href="mailto:philipdemand@gmail.com">philipdemand@gmail.com</a>. I'm open to new opportunities, collaboration, and feedback on my projects.</h3>
 
 <h1>Thank you for visiting my website!</h1>
