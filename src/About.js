@@ -37,9 +37,11 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
   return (
     <Container ref={aboutRef} style={{ paddingTop: "50px", fontFamily: 'Menlo, monospace' }}>
       <Row>
-        <Col>
+        <Col xs={12} sm={6} lg={6}>
             <h1>Hi, I'm Phil</h1>
             <h3>Full Stack Software Engineer</h3><br/>
+        {/* </Col>
+        <Col xs={12} sm={6} lg={6}> */}
             <h5 style={{paddingBottom: "20px"}}>Welcome to my personal website, your gateway to exploring my résumé, portfolio, and journey as a software engineer, designed to showcase my skills and passion for creating impactful tech solutions!</h5>
             <Button 
               size="sm" 
@@ -55,8 +57,8 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
               <FontAwesomeIcon onClick={handleNavLi} icon={faLinkedin} size="xl" className="icon"/> 
               <FontAwesomeIcon onClick={handleNavGh} icon={faGithub} size="xl" className="icon"/>
             </div>
-        </Col>
-        <Col><Image src={pic} width="500" height="auto" roundedCircle fluid/></Col>
+        </Col >
+        <Col xs={12} sm={6} lg={6}><Image src={pic} width="500" height="auto" roundedCircle fluid/></Col>
       </Row>
     </Container>
   );

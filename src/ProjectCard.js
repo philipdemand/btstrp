@@ -40,7 +40,7 @@ const ProjectCard = ({ project, lightClicked }) => {
     }
 
     return (
-        <Card className="bg-transparent" style={{maxWidth: "550px"}}>
+        <Card className="bg-transparent" style={{ maxWidth: "550px" }}>
             <Card.Body style={cardItemsStyle}>
                 <Card.Title style={{ fontSize: '1.3rem' }}>{project.title}</Card.Title>
                 <Card.Text style={{ fontSize: '.89rem' }}>
@@ -57,24 +57,24 @@ const ProjectCard = ({ project, lightClicked }) => {
                     })}
                 </Card.Text>
                 <ButtonGroup aria-label="Basic example" size="sm">
-                    {project.page && 
-                        <Button 
-                            style={!demoHovered ? buttonStyle : hoveredStyle} 
-                            variant="secondary" 
-                            href={project.page} 
+                    {project.page &&
+                        <Button
+                            style={!demoHovered ? buttonStyle : hoveredStyle}
+                            variant="secondary"
+                            href={project.page}
                             target="blank"
                             onMouseEnter={() => setDemoHovered(true)}
-                            onMouseLeave={() => setDemoHovered(false)}>    
-                                Demo</Button>}
-                    {project.github && 
-                        <Button 
-                            style={!githubHovered ? buttonStyle : hoveredStyle} 
-                            variant="secondary" 
-                            href={project.github} 
+                            onMouseLeave={() => setDemoHovered(false)}>
+                            Demo</Button>}
+                    {project.github &&
+                        <Button
+                            style={!githubHovered ? buttonStyle : hoveredStyle}
+                            variant="secondary"
+                            href={project.github}
                             target="blank"
                             onMouseEnter={() => setGithubHovered(true)}
                             onMouseLeave={() => setGithubHovered(false)}>
-                                Github</Button>}
+                            Github</Button>}
                 </ButtonGroup>
             </Card.Body>
         </Card>
