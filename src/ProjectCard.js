@@ -10,14 +10,14 @@ const ProjectCard = ({ project, lightClicked }) => {
     const [githubHovered, setGithubHovered] = useState(false)
 
     const buttonStyle = {
-        backgroundColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
+        backgroundColor: lightClicked ? '#273e6e' : 'rgb(40, 39, 39)',
         borderColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-        color: !lightClicked ? '#7d838d' : "#273e6e"
+        color: "#ffffff"
     };
 
     const hoveredStyle = {
-        backgroundColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
-        borderColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
+        backgroundColor: 'rgb(255, 255, 255)',
+        borderColor: 'rgb(255, 255, 255)',
         color: !lightClicked ? '#7d838d' : "#273e6e"
     };
 
