@@ -73,7 +73,7 @@ const NavBar = ({ lightClicked, toggleLightMode, scrollToAbout, scrollToContact,
                                 Contact
                             </Nav.Link>
                         </Nav>
-                    </Navbar.Collapse>
+                    
                     {lightClicked ? 
                         <FontAwesomeIcon 
                             style={!moonSunHovered ? navItemsStyle : hoveredNavItemsStyle}
@@ -92,6 +92,7 @@ const NavBar = ({ lightClicked, toggleLightMode, scrollToAbout, scrollToContact,
                             onMouseEnter={() => setMoonSunHovered(true)}
                             onMouseLeave={() => setMoonSunHovered(false)}
                         />}
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </div>
