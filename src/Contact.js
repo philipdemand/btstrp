@@ -32,6 +32,7 @@ const Contact = ({ contactRef, lightClicked }) => {
 
     const submitContactForm = (e) => {
         e.preventDefault()
+        if (formData.name && formData.email && formData.subject && formData.message) {
         emailjs
             .sendForm('service_2uu5qkr', 'template_co6pgdm', contactRef.current, {
                 publicKey: 'hsGvSZS6Ei9_r_cuI',
@@ -48,6 +49,9 @@ const Contact = ({ contactRef, lightClicked }) => {
                     toast.error('Failed to send email. Please try again later.', { autoClose: 3000 });
                 },
             );
+        } else {
+            toast.error('Please fill-in everything', { autoClose: 3000 });
+        }
     }
 
     function handleChange(e) {
