@@ -17,7 +17,7 @@ const ProjectCard = ({ project, lightClicked }) => {
     const buttonStyle = {
         backgroundColor: lightClicked ? '#273e6e' : 'rgb(40, 39, 39)',
         borderColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-        color: "#ffffff"
+        color: lightClicked ? "rgb(178, 176, 176)" : "#e6e6e6"
     };
 
     const hoveredStyle = {
@@ -27,8 +27,8 @@ const ProjectCard = ({ project, lightClicked }) => {
     };
 
     const cardItemsStyle = {
-        backgroundColor: "rgb(178, 176, 176)",
-        color: !lightClicked ? 'rgb(49, 39, 39)' : 'rgb(40, 39, 39)',
+        backgroundColor: lightClicked ? "rgb(178, 176, 176)" : "#e6e6e6",
+        color: !lightClicked ? 'rgb(40, 39, 39)' : '#273e6e',
         fontFamily: 'Menlo, monospace',
     }
 
@@ -100,50 +100,12 @@ const ProjectCard = ({ project, lightClicked }) => {
           <img src={project.image.url} alt="Enlarged" style={{ width: '100%', height: 'auto' }} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleModalClose}>
+          <Button size="sm" variant="secondary" onClick={handleModalClose}>
             Close
           </Button>
         </Modal.Footer>
       </Modal>
     </>
-        // <Card className="bg-transparent" style={{ maxWidth: "550px" }}>
-        //     <Card.Body style={cardItemsStyle}>
-        //         <Card.Title style={{ fontSize: '1.3rem' }}>{project.title}</Card.Title>
-        //         <Card.Text style={{ fontSize: '.89rem' }}>
-        //             {project.description}
-        //         </Card.Text>
-        //         <Card.Img style={{ paddingBottom: "10px", whiteSpace: 'pre-wrap' }}
-        //             variant="top"
-        //             src={project.image.url} />
-        //         <Card.Text style={{ fontSize: "40px" }}>
-        //             {getIcons(project.technologies).map((technology, idx) => {
-        //                 return (
-        //                     <i className={technology} key={idx}></i>
-        //                 );
-        //             })}
-        //         </Card.Text>
-        //         <ButtonGroup aria-label="Basic example" size="sm">
-        //             {project.page &&
-        //                 <Button
-        //                     style={!demoHovered ? buttonStyle : hoveredStyle}
-        //                     variant="secondary"
-        //                     href={project.page}
-        //                     target="blank"
-        //                     onMouseEnter={() => setDemoHovered(true)}
-        //                     onMouseLeave={() => setDemoHovered(false)}>
-        //                     Demo</Button>}
-        //             {project.github &&
-        //                 <Button
-        //                     style={!githubHovered ? buttonStyle : hoveredStyle}
-        //                     variant="secondary"
-        //                     href={project.github}
-        //                     target="blank"
-        //                     onMouseEnter={() => setGithubHovered(true)}
-        //                     onMouseLeave={() => setGithubHovered(false)}>
-        //                     Github</Button>}
-        //         </ButtonGroup>
-        //     </Card.Body>
-        // </Card>
     );
 };
 
