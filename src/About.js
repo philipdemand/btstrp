@@ -7,7 +7,7 @@ import pic from './images/square-fam.jpg'
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
 import resume from './P_Demand_Resume_4_20_24c.pdf'
 
 function About ({ aboutRef, lightClicked, scrollToContact }) {
@@ -34,6 +34,10 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
     window.open('https://github.com/philipdemand', '_blank');
   }
 
+  const handleNavMe = () => {
+    window.open('https://medium.com/@philipdemand', '_blank');
+  }
+
   return (
     <Container ref={aboutRef} style={{ paddingTop: "50px", fontFamily: 'Menlo, monospace' }}>
       <Row>
@@ -56,6 +60,7 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
               <a href={resume} style={{color: "inherit"}}download="P_Demand_Resume_4_20_24c.pdf"><FontAwesomeIcon icon={faFileLines} size="xl" className="icon"/></a>
               <FontAwesomeIcon onClick={handleNavLi} icon={faLinkedin} size="xl" className="icon"/> 
               <FontAwesomeIcon onClick={handleNavGh} icon={faGithub} size="xl" className="icon"/>
+              <FontAwesomeIcon onClick={handleNavMe} icon={faMedium} size="xl" className="icon"/>
             </div>
         </Col >
         <Col xs={12} sm={6} lg={6}><Image src={pic} width="500" height="auto" roundedCircle fluid/></Col>
