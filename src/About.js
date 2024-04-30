@@ -44,8 +44,6 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
         <Col xs={12} sm={6} lg={6}>
             <h1>Hi, I'm Phil</h1>
             <h3>Full Stack Software Engineer</h3><br/>
-        {/* </Col>
-        <Col xs={12} sm={6} lg={6}> */}
             <h5 style={{paddingBottom: "20px"}}>Welcome to my personal website, your gateway to exploring my résumé, portfolio, and journey as a software engineer, designed to showcase my skills and passion for creating impactful tech solutions!</h5>
             <Button 
               size="sm" 

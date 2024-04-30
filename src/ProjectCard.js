@@ -17,19 +17,21 @@ const ProjectCard = ({ project, lightClicked }) => {
     const buttonStyle = {
         backgroundColor: lightClicked ? '#273e6e' : 'rgb(40, 39, 39)',
         borderColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-        color: lightClicked ? "rgb(178, 176, 176)" : "#e6e6e6"
+        color: lightClicked ? "rgb(178, 176, 176)" : "#e6e6e6",
+        width: "150px"
     };
 
     const hoveredStyle = {
         backgroundColor: 'rgb(255, 255, 255)',
         borderColor: 'rgb(255, 255, 255)',
-        color: !lightClicked ? '#7d838d' : "#273e6e"
+        color: !lightClicked ? '#7d838d' : "#273e6e",
+        width: "150px"
     };
 
     const cardItemsStyle = {
         backgroundColor: lightClicked ? "rgb(178, 176, 176)" : "#e6e6e6",
         color: !lightClicked ? 'rgb(40, 39, 39)' : '#273e6e',
-        fontFamily: 'Menlo, monospace',
+        fontFamily: 'Menlo, monospace'
     }
 
     function getIcons(technologies) {
