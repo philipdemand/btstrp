@@ -62,7 +62,7 @@ const ProjectCard = ({ project, lightClicked }) => {
           />
           <Card.Text style={{ fontSize: "40px" }}>
             {getIcons(project.technologies).map((technology, idx) => {
-              const techName = technology.replace('devicon-', '').replace('-plain', '');
+              const techName = technology.replace('devicon-', '').replace('-plain', '').replace('-original', '').replace('-wordmark', '');
               return (
                 <OverlayTrigger
                   key={idx}
