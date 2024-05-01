@@ -34,7 +34,7 @@ const ProjectCard = ({ project, lightClicked }) => {
     fontFamily: 'Menlo, monospace'
   }
 
-  function getIcons(technologies) {
+  const getIcons = (technologies) => {
 
     const projectIcons = [];
     const iconNames = Object.keys(ICONS);

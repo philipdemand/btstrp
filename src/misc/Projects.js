@@ -14,7 +14,7 @@ export const PROJECTS = [
     {
       title: "E-Vent - An Event-Planning App",
       description: "An app where users can announce events, and where users can register and manage their attendance at events.  Frontend built with React utilizing React-Router.  Backend build with Ruby On Rails using bcrypt for password-hashing.",
-      technologies: ["npm", "ruby", "rails", "react", "reactrouter", "chrome", "css3", "git", "nodejs", "github", "html5", "mysql", "homebrew", "vscode"],
+      technologies: ["npm", "ruby", "rails", "react", "reactrouter", "chrome", "css3", "git", "postman", "nodejs", "github", "html5", "mysql", "homebrew", "vscode"],
       page: null,
       github: "https://github.com/philipdemand/e-vent-app",
       image: {
