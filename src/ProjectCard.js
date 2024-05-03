@@ -7,30 +7,14 @@ import Modal from 'react-bootstrap/Modal';
 
 const ProjectCard = ({ project, lightClicked }) => {
 
-  const [demoHovered, setDemoHovered] = useState(false)
-  const [githubHovered, setGithubHovered] = useState(false)
   const [showModal, setShowModal] = useState(false);
 
   const handleModalClose = () => setShowModal(false);
   const handleModalShow = () => setShowModal(true);
 
-  const buttonStyle = {
-    backgroundColor: lightClicked ? '#273e6e' : 'rgb(40, 39, 39)',
-    borderColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-    color: lightClicked ? "rgb(178, 176, 176)" : "#e6e6e6",
-    width: "150px"
-  };
-
-  const hoveredStyle = {
-    backgroundColor: 'rgb(255, 255, 255)',
-    borderColor: 'rgb(255, 255, 255)',
-    color: !lightClicked ? '#7d838d' : "#273e6e",
-    width: "150px"
-  };
-
   const cardItemsStyle = {
-    backgroundColor: lightClicked ? "rgb(178, 176, 176)" : "#e6e6e6",
-    color: !lightClicked ? 'rgb(40, 39, 39)' : '#273e6e',
+    backgroundColor: lightClicked ? "rgb(97, 96, 96)" : "#e6e6e6",
+    color: !lightClicked ? 'rgb(40, 39, 39)' : 'rgb(196, 194, 194)',
     fontFamily: 'Menlo, monospace'
   }
 
@@ -77,24 +61,20 @@ const ProjectCard = ({ project, lightClicked }) => {
           <ButtonGroup aria-label="Basic example" size="sm">
             {project.page && (
               <Button
-                style={!demoHovered ? buttonStyle : hoveredStyle}
+                className={!lightClicked ? "non-rb-button-light" : "non-rb-button-dark"} 
                 variant="secondary"
                 href={project.page}
                 target="blank"
-                onMouseEnter={() => setDemoHovered(true)}
-                onMouseLeave={() => setDemoHovered(false)}
               >
                 Demo
               </Button>
             )}
             {project.github && (
               <Button
-                style={!githubHovered ? buttonStyle : hoveredStyle}
+                className={!lightClicked ? "non-rb-button-light" : "non-rb-button-dark"} 
                 variant="secondary"
                 href={project.github}
                 target="blank"
-                onMouseEnter={() => setGithubHovered(true)}
-                onMouseLeave={() => setGithubHovered(false)}
               >
                 Github
               </Button>

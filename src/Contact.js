@@ -16,19 +16,6 @@ const Contact = ({ contactRef, lightClicked }) => {
     };
 
     const [formData, setFormData] = useState(initialFormData)
-    const [hovered, setHovered] = useState(false)
-
-    const buttonStyle = {
-        backgroundColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-        borderColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-        color: !lightClicked ? '#7d838d' : "#273e6e"
-    };
-
-    const hoveredStyle = {
-        backgroundColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
-        borderColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
-        color: !lightClicked ? '#7d838d' : "#273e6e"
-    };
 
     const submitContactForm = (e) => {
         e.preventDefault()
@@ -64,7 +51,7 @@ const Contact = ({ contactRef, lightClicked }) => {
 
     return (
         <div>
-            <Container style={{ paddingTop: "100px", paddingBottom: "60px", width: "50%" }} >
+            <Container style={{ paddingTop: "100px", paddingBottom: "40px", width: "50%" }} >
                 <h2 style={{ fontFamily: 'Menlo, monospace' }}>Let's Get In Touch!</h2>
                 <Form ref={contactRef} onSubmit={submitContactForm} style={{ fontFamily: 'Menlo, monospace' }}>
                     <Form.Group className="mb-3" controlId="name">
@@ -87,11 +74,9 @@ const Contact = ({ contactRef, lightClicked }) => {
                         <Form.Control as="textarea" rows={5} style={{ resize: "vertical" }} name="message" onChange={handleChange} value={formData.message} type="text" placeholder="Send me a message!" />
                     </Form.Group>
                     <Button
-                        style={!hovered ? buttonStyle : hoveredStyle}
+                        className={!lightClicked ? "non-rb-button-light" : "non-rb-button-dark"}
                         type="submit"
                         size="sm"
-                        onMouseEnter={() => setHovered(true)}
-                        onMouseLeave={() => setHovered(false)}
                     >
                         Submit
                     </Button>

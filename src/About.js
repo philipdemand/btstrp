@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,20 +11,6 @@ import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-ico
 import resume from './P_Demand_Resume_4_30_24.pdf'
 
 function About ({ aboutRef, lightClicked, scrollToContact }) {
-
-  const [hovered, setHovered] = useState(false)
-
-  const buttonStyle = {
-    backgroundColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-    borderColor: lightClicked ? 'rgb(178, 176, 176)' : 'rgb(40, 39, 39)',
-    color: !lightClicked ? '#7d838d' : "#273e6e"
-  };
-
-  const hoveredStyle = {
-    backgroundColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
-    borderColor: lightClicked ? 'rgb(255, 255, 255)' : 'rgb(255, 255, 255)',
-    color: !lightClicked ? '#7d838d' : "#273e6e"
-  };
 
   const handleNavLi = () => {
     window.open('http://www.linkedin.com/in/philip-demand', '_blank');
@@ -46,12 +32,9 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
             <h3>Full Stack Software Engineer</h3><br/>
             <h5 style={{paddingBottom: "20px"}}>Welcome to my personal website, your gateway to exploring my résumé, portfolio, and journey as a software engineer, designed to showcase my skills and passion for creating impactful tech solutions!</h5>
             <Button 
-              size="sm" 
-              style={!hovered ? buttonStyle : hoveredStyle} 
-              onClick={scrollToContact}
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-            >
+                className={!lightClicked ? "non-rb-button-light" : "non-rb-button-dark"} 
+                onClick={scrollToContact}
+                >
                 Contact Me!
             </Button>
             <div className="pad-top">

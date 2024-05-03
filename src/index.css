@@ -37,6 +37,14 @@ code {
   margin-bottom: 10px;
 }
 
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
 .pad-top {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -53,4 +61,58 @@ code {
 .portfoliodiv {
   font-family: Menlo, monospace;
   padding-top: 30px;
+}
+
+.non-rb-button-light {
+  position: relative;
+  z-index: 1 !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6) !important;
+  padding: 6px 12px !important;
+  border-radius: 2px !important;
+  font-size: 16px !important;
+  background-color: rgb(40, 39, 39) !important;
+  border-color: black !important;
+  color: #c8c8c8 !important;
+}
+
+.non-rb-button-light:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8) !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: black !important;
+}
+
+.non-rb-button-dark {
+  position: relative;
+  z-index: 1 !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6) !important;
+  padding: 6px 12px !important;
+  border-radius: 2px !important;
+  font-size: 16px !important;
+  background-color: rgb(178, 176, 176) !important;
+  border-color: black !important;
+  color: #272626 !important;
+}
+
+.non-rb-button-dark:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8) !important;
+  background-color: rgb(255, 255, 255) !important;
+  color: black !important;
+}
+
+.basic-text-light {
+  color: rgb(40, 39, 39) !important;
+  font-family: Menlo, monospace;
+}
+
+.basic-text-light:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+.basic-text-dark {
+  color: rgb(178, 176, 176) !important;
+  font-family: Menlo, monospace;
+}
+
+.basic-text-dark:hover {
+  color: rgb(255, 255, 255) !important;
 }
