@@ -37,6 +37,7 @@ const ProjectCard = ({ project, lightClicked }) => {
             style={{ paddingBottom: "10px", whiteSpace: 'pre-wrap', cursor: 'pointer' }}
             variant="top"
             src={project.image.url}
+            alt={project.alt}
             onClick={handleModalShow}
           />
           <Card.Text style={{ fontSize: "40px" }}>

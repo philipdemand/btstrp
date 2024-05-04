@@ -5,6 +5,7 @@ export const PROJECTS = [
       technologies: ["nodejs", "npm", "chrome", "ruby", "rails", "react", "reactrouter", "reactbootstrap", "css3", "git", "github", "postman", "html5", "postgresql", "homebrew", "vscode"],
       page: "https://gig-board.onrender.com",
       github: "https://github.com/philipdemand/gig-board-app",
+      alt: "gig-board",
       image: {
         width: 2880,
         height: 1644,
@@ -17,6 +18,7 @@ export const PROJECTS = [
       technologies: ["npm", "ruby", "rails", "react", "reactrouter", "chrome", "css3", "git", "postman", "nodejs", "github", "html5", "mysql", "homebrew", "vscode"],
       page: null,
       github: "https://github.com/philipdemand/e-vent-app",
+      alt: "e-vent",
       image: {
         width: 2880,
         height: 1644,
@@ -29,6 +31,7 @@ export const PROJECTS = [
       technologies: ["reactbootstrap", "chrome", "css3", "devicon", "git", "github", "html5", "javascript", "nodejs", "npm", "react", "homebrew", "vscode", "amazonwebservices"],
       page: null,
       github: "https://github.com/philipdemand/my-personal-website",
+      alt: "personal-website",
       image: {
         width: 2880,
         height: 1800,

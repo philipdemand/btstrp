@@ -44,7 +44,7 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
               <FontAwesomeIcon onClick={handleNavMe} icon={faMedium} size="xl" className={!lightClicked ? "icon-light" : "icon-dark"}/>
             </div>
         </Col >
-        <Col xs={12} sm={6} lg={6}><Image src={pic} width="500" height="auto" roundedCircle fluid/></Col>
+        <Col xs={12} sm={6} lg={6}><Image src={pic} alt="familyimage" width="500" height="auto" roundedCircle fluid/></Col>
       </Row>
     </Container>
   );
