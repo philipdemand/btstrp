@@ -38,10 +38,10 @@ function About ({ aboutRef, lightClicked, scrollToContact }) {
                 Contact Me!
             </Button>
             <div className="pad-top">
-              <a href={resume} style={{color: "inherit"}}download="P_Demand_Resume_4_30_24.pdf"><FontAwesomeIcon icon={faFileLines} size="xl" className="icon"/></a>
-              <FontAwesomeIcon onClick={handleNavLi} icon={faLinkedin} size="xl" className="icon"/> 
-              <FontAwesomeIcon onClick={handleNavGh} icon={faGithub} size="xl" className="icon"/>
-              <FontAwesomeIcon onClick={handleNavMe} icon={faMedium} size="xl" className="icon"/>
+              <a href={resume} style={{color: "inherit"}}download="P_Demand_Resume_4_30_24.pdf"><FontAwesomeIcon icon={faFileLines} size="xl" className={!lightClicked ? "icon-light" : "icon-dark"}/></a>
+              <FontAwesomeIcon onClick={handleNavLi} icon={faLinkedin} size="xl" className={!lightClicked ? "icon-light" : "icon-dark"}/> 
+              <FontAwesomeIcon onClick={handleNavGh} icon={faGithub} size="xl" className={!lightClicked ? "icon-light" : "icon-dark"}/>
+              <FontAwesomeIcon onClick={handleNavMe} icon={faMedium} size="xl" className={!lightClicked ? "icon-light" : "icon-dark"}/>
             </div>
         </Col >
         <Col xs={12} sm={6} lg={6}><Image src={pic} width="500" height="auto" roundedCircle fluid/></Col>

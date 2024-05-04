@@ -12,11 +12,6 @@ const ProjectCard = ({ project, lightClicked }) => {
   const handleModalClose = () => setShowModal(false);
   const handleModalShow = () => setShowModal(true);
 
-  const cardItemsStyle = {
-    backgroundColor: lightClicked ? "rgb(97, 96, 96)" : "#e6e6e6",
-    color: !lightClicked ? 'rgb(40, 39, 39)' : 'rgb(196, 194, 194)',
-    fontFamily: 'Menlo, monospace'
-  }
 
   const getIcons = (technologies) => {
 
@@ -33,7 +28,7 @@ const ProjectCard = ({ project, lightClicked }) => {
   return (
     <>
       <Card className="bg-transparent" style={{ maxWidth: "550px" }}>
-        <Card.Body style={cardItemsStyle}>
+        <Card.Body className={!lightClicked ? "light-card" : "dark-card"}>
           <Card.Title style={{ fontSize: '1.3rem' }}>{project.title}</Card.Title>
           <Card.Text style={{ fontSize: '.89rem' }}>
             {project.description}

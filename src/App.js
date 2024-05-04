@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     document.documentElement.style.setProperty(
       '--background-color',
-      lightClicked ? '#273e6e' : '#7d838d'
+      lightClicked ? '#121212' : '#F6F7FB'
     );
   }, [lightClicked]);
 
@@ -51,7 +51,7 @@ function App() {
       <Portfolio projects={PROJECTS} lightClicked={lightClicked} portfolioRef={portfolioRef}/>
       <Contact lightClicked={lightClicked} contactRef={contactRef}/>
       <Footer lightClicked={lightClicked}/>
-      <ScrollButton scrollTop={scrollTop}/>
+      <ScrollButton lightClicked={lightClicked} scrollTop={scrollTop}/>
       </header>
     </div>
   );

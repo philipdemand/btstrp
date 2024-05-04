@@ -56,22 +56,20 @@ const Contact = ({ contactRef, lightClicked }) => {
                 <Form ref={contactRef} onSubmit={submitContactForm} style={{ fontFamily: 'Menlo, monospace' }}>
                     <Form.Group className="mb-3" controlId="name">
                         <Form.Label style={{ fontSize: "18px" }}>Name:</Form.Label>
-                        <Form.Control name="name" onChange={handleChange} value={formData.name} type="text" placeholder="Enter your name" />
+                        <Form.Control className={!lightClicked ? "form-shadow-light" : "form-shadow-dark"} name="name" onChange={handleChange} value={formData.name} type="text" placeholder="Enter your name" />
                     </Form.Group>
-
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label style={{ fontSize: "18px" }}>Email Address:</Form.Label>
-                        <Form.Control name="email" onChange={handleChange} value={formData.email} type="email" placeholder="Enter Email Address" />
+                        <Form.Control className={!lightClicked ? "form-shadow-light" : "form-shadow-dark"} name="email" onChange={handleChange} value={formData.email} type="email" placeholder="Enter Email Address" />
                     </Form.Group>
-
                     <Form.Group className="mb-3" controlId="subject">
                         <Form.Label style={{ fontSize: "18px" }}>Subject:</Form.Label>
-                        <Form.Control name="subject" onChange={handleChange} value={formData.subject} type="text" placeholder="Subject" />
+                        <Form.Control className={!lightClicked ? "form-shadow-light" : "form-shadow-dark"} name="subject" onChange={handleChange} value={formData.subject} type="text" placeholder="Subject" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="message">
                         <Form.Label style={{ fontSize: "18px" }}>Message:</Form.Label>
-                        <Form.Control as="textarea" rows={5} style={{ resize: "vertical" }} name="message" onChange={handleChange} value={formData.message} type="text" placeholder="Send me a message!" />
+                        <Form.Control className={!lightClicked ? "form-shadow-light" : "form-shadow-dark"} as="textarea" rows={5} style={{ resize: "vertical" }} name="message" onChange={handleChange} value={formData.message} type="text" placeholder="Send me a message!" />
                     </Form.Group>
                     <Button
                         className={!lightClicked ? "non-rb-button-light" : "non-rb-button-dark"}

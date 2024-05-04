@@ -1,6 +1,7 @@
 .lightapp {
   text-align: center;
-  background-color: #7d838d;
+  /* background-color: #7d838d; */
+  background-color: #F6F7FB;
 }
 
 .lightapp-header {
@@ -18,7 +19,8 @@
 
 .darkapp {
   text-align: center;
-  background-color: #273e6e;
+  /* background-color: #273e6e; */
+  background-color: #121212;
 }
 
 .darkapp-header {
@@ -27,7 +29,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(178, 176, 176);
+  /* color: rgb(178, 176, 176); */
+  color: #dddddd;
 }
 
 .darkapp-link {
