@@ -136,11 +136,12 @@ a:hover {
 }
 
 .light-card {
-  background-color: rgb(224, 224, 224);
+  background-color: #ddeef4;
   color: rgb(40, 39, 39) !important;
 }
 
 .dark-card {
-  background-color: #1e1e1e;
+  /* background-color: #1e1e1e; */
+  background-color: #235b6e;
   color: #dddddd !important;
 }

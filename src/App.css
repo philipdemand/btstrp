@@ -2,6 +2,7 @@
   text-align: center;
   /* background-color: #7d838d; */
   background-color: #F6F7FB;
+  
 }
 
 .lightapp-header {
@@ -20,7 +21,8 @@
 .darkapp {
   text-align: center;
   /* background-color: #273e6e; */
-  background-color: #121212;
+  /* background-color: #121212; */
+  background-color: #194250;
 }
 
 .darkapp-header {
