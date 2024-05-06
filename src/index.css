@@ -70,19 +70,14 @@ a:hover {
   padding: 6px 12px !important;
   border-radius: 2px !important;
   font-size: 16px !important;
-  /* background-color: rgb(40, 39, 39) !important; */
   background-color: #BBDDE9 !important;
-  /* border-color: black !important; */
   border-color: #BBDDE9 !important;
-  /* color: #c8c8c8 !important; */
   color: black !important;
 }
 
 .non-rb-button-light:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8) !important;
-  /* background-color: rgb(255, 255, 255) !important; */
   background-color: #84B9CC !important;
-  /* color: black !important; */
   color: black !important;
   border-color: #84B9CC !important;
 }
@@ -111,7 +106,6 @@ a:hover {
 }
 
 .basic-text-light:hover {
-  /* color: rgb(255, 255, 255) !important; */
   color: #BBDDE9 !important;
 }
 
@@ -141,7 +135,6 @@ a:hover {
 }
 
 .dark-card {
-  /* background-color: #1e1e1e; */
   background-color: #235b6e;
   color: #dddddd !important;
 }

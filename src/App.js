@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     document.documentElement.style.setProperty(
       '--background-color',
-      lightClicked ? '#121212' : '#F6F7FB'
+      lightClicked ? '#194250' : '#F6F7FB'
     );
   }, [lightClicked]);
 
@@ -34,7 +34,7 @@ function App() {
     portfolioRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  function scrollTop() {
+  const scrollTop = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
