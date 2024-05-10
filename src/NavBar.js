@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import resume from './P_Demand_Resume_4_30_24.pdf'
+import resume from './P_Demand_Resume_5_10_24.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
@@ -35,7 +35,7 @@ const NavBar = ({ lightClicked, toggleLightMode, scrollToAbout, scrollToContact,
                             </Nav.Link>
                             <Nav.Link
                                 className={!lightClicked ? "basic-text-light" : "basic-text-dark"}
-                                href={resume} download="P_Demand_Resume_4_30_24.pdf"
+                                href={resume} download="P_Demand_Resume_5_10_24.pdf"
                             >
                                 Résumé
                             </Nav.Link>
