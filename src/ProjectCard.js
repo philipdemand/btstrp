@@ -40,7 +40,7 @@ const ProjectCard = ({ project, lightClicked }) => {
             alt={project.alt}
             onClick={handleModalShow}
           />
-          <Card.Text style={{ fontSize: "40px" }}>
+          <Card.Text style={{ fontSize: "38px" }}>
             {getIcons(project.technologies).map((technology, idx) => {
               const techName = technology.replace('devicon-', '').replace('-plain', '').replace('-original', '').replace('-wordmark', '');
               return (
@@ -49,7 +49,7 @@ const ProjectCard = ({ project, lightClicked }) => {
                   placement="top"
                   overlay={<Tooltip>{techName}</Tooltip>}
                 >
-                  <i className={technology}></i>
+                  <i className={technology} style={{paddingRight: "5px"}}></i>
                 </OverlayTrigger>
               );
             })}
