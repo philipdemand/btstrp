@@ -126,7 +126,7 @@ a:hover {
 .form-shadow-dark {
   z-index: 1 !important;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6) !important;
-  background-color: gray !important;
+  background-color: rgb(186, 186, 186) !important;
 }
 
 .light-card {
