@@ -1,7 +1,7 @@
 export const PROJECTS = [
     {
       title: "Gig-Board - A Gig-Finder for Musicians",
-      description: "An app where musicians can find and apply for gigs, and where holders of gigs can find musicians.  Frontend built with React.  Backend build with Ruby On Rails using a PostgreSQL database, bcrypt for password-hashing, and delegated types to distinguish user-types: musicians and directors. Styled using React Bootstrap",
+      description: "An app where musicians can find and apply for gigs, and where holders of gigs can find musicians.  Frontend built with React.  Backend built with Ruby On Rails using a PostgreSQL database, bcrypt for password-hashing, and delegated types to distinguish user-types: musicians and directors. Styled using React Bootstrap",
       technologies: ["nodejs", "javascript", "npm", "chrome", "ruby", "rails", "react", "reactrouter", "reactbootstrap", "css3", "git", "github", "postman", "html5", "postgresql", "homebrew", "vscode"],
       page: "https://gig-board.onrender.com",
       github: "https://github.com/philipdemand/gig-board-app",
