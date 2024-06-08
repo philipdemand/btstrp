@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faTwitter, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter, faSquareInstagram, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = ({ lightClicked }) => {
 
@@ -20,6 +20,14 @@ const Footer = ({ lightClicked }) => {
                     className={!lightClicked ? "icon-light" : "icon-dark"}
                     size="lg" 
                     icon={faTwitter} 
+                />
+            </a>
+            <a href="http://www.instagram.com/philipdemand" 
+                target="_blank" rel="noreferrer" style={{ color: 'inherit' }}>
+                <FontAwesomeIcon 
+                    className={!lightClicked ? "icon-light" : "icon-dark"}
+                    size="lg" 
+                    icon={faSquareInstagram} 
                 />
             </a>
             <a href="https://github.com/philipdemand"
